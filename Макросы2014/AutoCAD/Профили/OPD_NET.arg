@@ -1,0 +1,617 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET]
+"DisableAcadSection"=dword:00000000
+"IsPureAcadProfile"=dword:00000001
+"UserName"="user Коновалов, сгп"
+"NFWState"=dword:00000001
+""=""
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\acadvba]
+"AutoEmbedding"=dword:00000000
+"AllowBreakOnErrors"=dword:00000001
+"ShowSecurityDlg"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Camera]
+"Model glyphs color"=dword:00FF6633
+"Layout glyphs color"=dword:00FF6633
+"Parallel glyphs color"=dword:00FF6633
+"Perspective glyphs color"=dword:00FF6633
+"Model frustrum color"=dword:006666FF
+"Layout frustrum color"=dword:006666FF
+"Parallel frustrum color"=dword:006666FF
+"Perspective frustrum color"=dword:006666FF
+"Model clipping color"=dword:00F0CAA6
+"Layout clipping color"=dword:00F0CAA6
+"Parallel clipping color"=dword:00F0CAA6
+"Perspective clipping color"=dword:00F0CAA6
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Command Line Windows]
+"CmdLine.BackColor"=dword:00FFFFFF
+"TextWindow.ForeColor"=dword:00000000
+"TextWindow.BackColor"=dword:00FFFFFF
+"CmdLine.ForeColor"=dword:00000000
+"CmdLine.FontFace"="Courier New"
+"CmdLine.FontHeight"=dword:0000000A
+"CmdLine.FontWeight"=dword:00000190
+"CmdLine.FontItalic"=dword:00000000
+"CmdLine.FontPitchAndFamily"=dword:000000EB
+"TextWindow.FontFace"="Courier New"
+"TextWindow.FontHeight"=dword:0000000A
+"TextWindow.FontWeight"=dword:00000190
+"TextWindow.FontItalic"=dword:00000000
+"TextWindow.FontPitchAndFamily"=dword:000000EB
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Defaults]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Defaults\AecBase50]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Defaults\AecBase50\DwgSetup]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Defaults\AecBase50\DwgSetup\Imperial]
+"ScaleOnInsert"=dword:00000001
+"LinearUnit"=dword:0000001F
+"LinearDispFormat"=dword:00000004
+"LinearPrec"=dword:00000004
+"AngularDispFormat"=dword:00000000
+"AngularAzimuth"=dword:00000000
+"AngularPrec"=dword:00000002
+"ElevationPrec"=dword:00000002
+"CoordinatePrec"=dword:00000004
+"AecDwgBasePtX"="0.000000"
+"AecDwgBasePtY"="0.000000"
+"AecDwgBasePtZ"="0.000000"
+"AecBasePtNEX"="0.000000"
+"AecBasePtNEY"="0.000000"
+"AecBasePtNEZ"="0.000000"
+"AecNorthRotation"="0.000000"
+"VerticalScale"="4.000000"
+"TextHeight"="0.125000"
+"AreaDisplayUnit"=dword:00000038
+"AreaPrec"=dword:00000002
+"AreaSuffix"=" Sq.Ft."
+"VolumeDisplayUnit"=dword:00000082
+"VolumePrec"=dword:00000002
+"VolumeSuffix"=" Cu.Ft."
+"CivilStateFlag1"=dword:00000000
+"CivilStateFlag2"=dword:00001000
+"CivilStateFlag3"=dword:00000000
+"CivilDimaltd"=dword:00000002
+"CivilTextStyle"="L120"
+"CivilDimpost"="'"
+"CivilDimapost"="m"
+"CivilDimexo"="0.062500"
+"CivilDimscale"="96.000000"
+"CivilDimaltf"="0.304800"
+"LayerStandard"="AIA (256 Color)"
+"FacetDev"="0.500000"
+"LayerFile"="AecLayerStd.dwg"
+"SuperScript"=dword:00000001
+"SuperScriptZeroSupression"=dword:00000001
+"ElevationLabelPlus"=dword:00000001
+"ElevationLabelPlusMinus"=dword:00000001
+"CurrentDimUnit"=dword:0000001F
+"MaxFacetsOnCircle"=dword:000001F4
+"CreateDimOverride"=dword:00000001
+"AlwaysUpdateLayerKeyStyle"=dword:00000000
+"IndependentLayerOnOff"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Defaults\AecBase50\DwgSetup\Metric]
+"ScaleOnInsert"=dword:00000001
+"LinearUnit"=dword:00000019
+"LinearDispFormat"=dword:00000002
+"LinearPrec"=dword:00000003
+"AngularDispFormat"=dword:00000000
+"AngularAzimuth"=dword:00000000
+"AngularPrec"=dword:00000002
+"ElevationPrec"=dword:00000003
+"CoordinatePrec"=dword:00000004
+"AecDwgBasePtX"="0.000000"
+"AecDwgBasePtY"="0.000000"
+"AecDwgBasePtZ"="0.000000"
+"AecBasePtNEX"="0.000000"
+"AecBasePtNEY"="0.000000"
+"AecBasePtNEZ"="0.000000"
+"AecNorthRotation"="0.000000"
+"VerticalScale"="50.000000"
+"TextHeight"="3.175000"
+"AreaDisplayUnit"=dword:00000037
+"AreaPrec"=dword:00000002
+"AreaSuffix"="m2"
+"VolumeDisplayUnit"=dword:00000060
+"VolumePrec"=dword:00000002
+"VolumeSuffix"="m3"
+"CivilStateFlag1"=dword:00000000
+"CivilStateFlag2"=dword:00001000
+"CivilStateFlag3"=dword:00000000
+"CivilDimaltd"=dword:00000003
+"CivilTextStyle"="5MM"
+"CivilDimpost"="m"
+"CivilDimapost"="'"
+"CivilDimexo"="1.587500"
+"CivilDimscale"="100.000000"
+"CivilDimaltf"="3.280840"
+"LayerStandard"="BS1192 Descriptive (256 color)"
+"FacetDev"="10.000000"
+"LayerFile"="AecLayerStd.dwg"
+"SuperScript"=dword:00000001
+"SuperScriptZeroSupression"=dword:00000001
+"ElevationLabelPlus"=dword:00000001
+"ElevationLabelPlusMinus"=dword:00000001
+"CurrentDimUnit"=dword:00000002
+"MaxFacetsOnCircle"=dword:000001F4
+"CreateDimOverride"=dword:00000001
+"AlwaysUpdateLayerKeyStyle"=dword:00000000
+"IndependentLayerOnOff"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Dialogs]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Drawing Recovery]
+""=""
+"LoggedFileCount"=dword:00000000
+"TopToWholeRatioPercent"=dword:0000004D
+"TopToWholeRatioPercentUpper"=dword:0000003C
+"MinFilesGroup"=dword:00000000
+"MinDetailGroup"=dword:00000000
+"MinPreviewGroup"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Drawing Window]
+"Background"=dword:00000000
+"Layout background"=dword:00FFFFFF
+"Parallel background"=dword:00C0C0C0
+"Perspective sky zenith"=dword:00F2D3CC
+"Perspective sky horizon"=dword:00EAE2E2
+"Perspective ground origin"=dword:00C3CAC8
+"Perspective ground horizon"=dword:00DCDCDC
+"Perspective sub-surface azimuth"=dword:00B6C7DB
+"Perspective sub-surface horizon"=dword:00D2D2DA
+"BEditBackground"=dword:00E5FCFF
+"Plot preview background"=dword:00FFFFFF
+"XhairPickboxEtc"=dword:00FFFFFF
+"LayoutXhairPickboxEtc"=dword:00000000
+"Parallel Xhair color"=dword:00009900
+"Perspective Xhair color"=dword:00009900
+"BEdit Xhair color"=dword:00000000
+"Parallel grid major lines color"=dword:00DCDCDC
+"Perspective grid major lines color"=dword:00E6E6E6
+"Parallel grid minor lines color"=dword:00CACACA
+"Perspective grid minor lines color"=dword:00D7D7D7
+"Parallel grid axis lines color"=dword:00FFFFFF
+"Perspective grid axis lines color"=dword:00FFFFFF
+"Autotracking vector"=dword:00000002
+"Model ATrack vector"=dword:00FFFFFF
+"Layout ATrack vector"=dword:00000000
+"Parallel ATrack vector"=dword:00404040
+"Perspective ATrack vector"=dword:00404040
+"BEdit ATrack vector"=dword:00000000
+"MonoVectors"=dword:00000000
+"Model Xhair use tint"=dword:00000000
+"Layout Xhair use tint"=dword:00000000
+"Parallel Xhair use tint"=dword:00000001
+"Perspective Xhair use tint"=dword:00000001
+"BEdit Xhair use tint"=dword:00000000
+"Model ATrack use tint"=dword:00000000
+"Layout ATrack use tint"=dword:00000000
+"Parallel ATrack use tint"=dword:00000000
+"Perspective ATrack use tint"=dword:00000000
+"BEdit ATrack use tint"=dword:00000000
+"Parallel grid major lines tint"=dword:00000000
+"Perspective grid major lines tint"=dword:00000000
+"Parallel grid minor lines tint"=dword:00000000
+"Perspective grid minor lines tint"=dword:00000000
+"Parallel grid axis lines tint"=dword:00000001
+"Perspective grid axis lines tint"=dword:00000001
+"FontFace"="MS Sans Serif"
+"FontHeight"=dword:00000008
+"FontWeight"=dword:00000190
+"FontItalic"=dword:00000000
+"FontPitchAndFamily"=dword:00000000
+"ShowPaperBackground"=dword:00000000
+"ForeColor"=dword:00000000
+"BackColor"=dword:00FFFFFF
+"MoreHideWarningDialogs"=dword:20002200
+"HideWarningDialogs"=dword:00600000
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Editor Configuration]
+"CustomDictionary"="%RoamableRootFolder%\\support\\sample.cus"
+"EmergencyFont"="Arial"
+"FontMappingFile"="%RoamableRootFolder%\\support\\acad.fmp"
+"XrefLoadPath"="%TempFolder%\\"
+"SaveFilePath"="%TempFolder%\\"
+"LogFilePath"="%LocalRootFolder%\\"
+"PSOUT_PrologFileName"=""
+"MainDictionary"="fin"
+"MTextEditor"="Встроенный"
+"BActionColor"="7"
+"BGripObjColor"="141"
+"BParameterColor"="7"
+"BParameterFont"="Simplex.shx"
+"ACADLspAsDoc"=dword:00000000
+"XCROSSHAIRLABEL"="Х"
+"YCROSSHAIRLABEL"="Y"
+"ZCROSSHAIRLABEL"="Z"
+""=""
+"AnnoAutoScaleLayout"=dword:00000004
+"SELECTIONANNODISPLAY"=dword:00000000
+"TraySettingsShowNotifications"=dword:00000000
+"TraySettingsTimeoutInSeconds"=dword:00000005
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\General]
+"TemplatePath"="\\\\Sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Шаблоны"
+"ColorBookLocation"="%InstallFolder%\\support\\color;%RoamableRootFolder%\\support\\color;"
+"AlternativePageSetUpsTemplate"="\\\\sgpsrv2\\спд\\конструкторы\\макросы\\autocad\\шаблоны\\листы.dwt"
+"PrinterConfigDir"="\\\\Sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Настройка\\Plotters"
+"PrinterDescDir"="\\\\Sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Настройка\\Plotters\\PMP Files"
+"PrinterStyleSheetDir"="\\\\Sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Настройка\\Plot Styles"
+"ToolPalettePath"="\\\\Sgpsrv2\\СПД\\Конструкторы\\БЛОКИ\\Palettes"
+"SheetSetTemplatePath"="\\\\sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Шаблоны\\Подшивки\\"
+"ACAD"="%RoamableRootFolder%\\Support;%RoamableRootFolder%\\Support\\pats;%InstallFolder%\\Support;%InstallFolder%\\Fonts;%InstallFolder%\\Help;%InstallFolder%\\Support\\Color;\\\\SGPSRV2\\СПД\\Конструкторы\\Макросы;\\\\SGPSRV2\\СПД\\Конструкторы\\Макросы\\Pltools;%InstallFolder%\\Express;\\\\Sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Настройка;"
+"PlotLogPath"="%LocalRootFolder%\\"
+"DatabaseWorkSpacePath"="%RoamableRootFolder%\\Data Links"
+"AVEMAPS"="C:\\Documents and Settings\\All Users\\Application Data\\Autodesk\\ACD-A 2008\\rus\\Textures\\;C:\\Documents and Settings\\All Users\\Application Data\\Autodesk\\ACD-A 2008\\rus\\Textures\\bump\\;C:\\Documents and Settings\\All Users\\Application Data\\Autodesk\\ACD-A 2008\\rus\\Textures\\cutout\\"
+"RegisteredToolsPath"="%RoamableRootFolder%\\Support\\RegisteredTools-AutoCAD\\"
+"IESWEB"="C:\\Documents and Settings\\All Users\\Application Data\\Autodesk\\ACD-A 2008\\rus\\WebFiles\\"
+"ACADHELP"="%InstallFolder%\\Help\\acad171.chm"
+"ACADDRV"="%InstallFolder%\\drv;%InstallFolder%\\drv"
+"NewStyleSheet"="Все_черным.ctb"
+"DefaultFormatForSave"=dword:00000024
+"DefaultConfig"="\\\\Sgpsrv2\\СПД\\Конструкторы\\Макросы\\AutoCAD\\Настройка\\Plotters\\HP Designjet 500ps plus 42 fast 841_1200.pc3"
+"LastModifiedConfig"="WorkCentre M118"
+"MRUConfig"="WorkCentre M118"
+"AuthorPalettePath"="%RoamableRootFolder%\\Support\\AuthorPalette"
+"ACADLOGFILE"="%LocalRootFolder%\\acad.log"
+"MaxDwg"=dword:00000000
+"PlotToFilePath"="%UserProfileFolder%\\Мои документы"
+"DefaultPlotStyle"="ByColor"
+"DefaultLayerZeroPlotStyle"="ByColor"
+"LineWeightUnits"=dword:00000001
+"OpaqueMode"=dword:00000002
+"LWDEFAULT"=dword:00000019
+"Delobj"=dword:00000001
+"UseStartUpDialog"=dword:00000000
+"MTextJigString"="abc"
+"WSCURRENT"="Классический AutoCAD"
+"LayerPMode"="1"
+"WSAUTOSAVE"=dword:00000001
+"PLQUIET"=dword:00000000
+"DisplayPlotBubble"=dword:00000001
+"Osmode"=dword:00003BFF
+"Attreq"=dword:00000000
+"AcBattman:LastBlock"="STR__vil_Leader"
+"AcBattman:LastAttribute"="STR__ВЕРХНЯЯ"
+"DontShowBkgPlotInProgressDlg"=dword:00000001
+"PREVIEWFILTER"=dword:0000001F
+"CheckDrawingSignature"=dword:00000000
+"ACET-ACETMAIN-MENULOADED"="1"
+"Attipe"=dword:00000001
+"CustomColors"=dword:00000001
+"XrefType"=dword:00000001
+"CmdVisLines"=dword:00000004
+"WhipArcEnable"=dword:00000001
+"WhipThreadEnable"=dword:00000003
+"Coords"=dword:00000002
+"UseMRUConfig"=dword:00000001
+"QnewTemplate"="\\\\sgpsrv2\\спд\\конструкторы\\макросы\\autocad\\шаблоны\\модель.dwt"
+"PlotOffset"=dword:00000001
+"ProfileStorage"="%RoamableRootFolder%\\Support\\Profiles\\OPD_NET\\Profile.aws"
+"HideSystemPrinters"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\General Configuration]
+"EnterpriseMenuFile"="\\\\sgpsrv2\\спд\\конструкторы\\макросы\\autocad\\настройка\\acad_opd_sgpsrv2"
+"MenuFile"="%RoamableRootFolder%\\Support\\ACAD"
+"TempDirectory"="%TempFolder%\\"
+"ModeBits"=dword:FFFFFFFE
+"PlotSpoolerDirectory"="%TempFolder%\\"
+"DefaultLoginName"=""
+"IsavePercent"=dword:00000032
+"NetLocation"="http://www.autodesk.com"
+"IconFilePath"="%RoamableRootFolder%\\support\\icons"
+"ReportError"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Light]
+"Model glyphs color"=dword:00FFFFFF
+"Layout glyphs color"=dword:00CC9966
+"Parallel glyphs color"=dword:00FFFFFF
+"Perspective glyphs color"=dword:00CC9966
+"BEdit glyphs color"=dword:00CC9966
+"Model hotspot color"=dword:00FFFFFF
+"Layout hotspot color"=dword:00CC9966
+"Parallel hotspot color"=dword:00FFFFFF
+"Perspective hotspot color"=dword:00CC9966
+"BEdit hotspot color"=dword:00CC9966
+"Model falloff color"=dword:00CC9966
+"Layout falloff color"=dword:00996666
+"Parallel falloff color"=dword:00CC9966
+"Perspective falloff color"=dword:00996666
+"BEdit falloff color"=dword:00996666
+"Model start color"=dword:00CC9966
+"Layout start color"=dword:00996666
+"Parallel start color"=dword:00CC9966
+"Perspective start color"=dword:00996666
+"BEdit start color"=dword:00996666
+"Model end color"=dword:00CC9966
+"Layout end color"=dword:00996666
+"Parallel end color"=dword:00CC9966
+"Perspective end color"=dword:00996666
+"BEdit end color"=dword:00996666
+"Model Web color"=dword:0000E5FF
+"Layout Web color"=dword:0000E5FF
+"Parallel Web color"=dword:0000E5FF
+"Perspective Web color"=dword:0000E5FF
+"BEdit Web color"=dword:0000E5FF
+"Model Web(missing file) color"=dword:000000FF
+"Layout Web(missing file) color"=dword:000000FF
+"Parallel Web(missing file) color"=dword:000000FF
+"Perspective Web(missing file) color"=dword:000000FF
+"BEdit Web(missing file) color"=dword:000000FF
+"Model Web shape color"=dword:0000E5FF
+"Layout Web shape color"=dword:0000E5FF
+"Parallel Web shape color"=dword:0000E5FF
+"Perspective Web shape color"=dword:0000E5FF
+"BEdit Web shape color"=dword:0000E5FF
+"Model lux at distance color"=dword:0066B2CC
+"Layout lux at distance color"=dword:0066B2CC
+"Parallel lux at distance color"=dword:0066B2CC
+"Perspective lux at distance color"=dword:0066B2CC
+"BEdit lux at distance color"=dword:0066B2CC
+"Glyph size"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Menus]
+"Group1"="CUSTOM custom"
+"Pop1"="ACAD pop1"
+"Pop500"="ACAD_OPD_SGPSRV2 pop500"
+"Pop501"="ACAD_OPD_SGPSRV2 pop501"
+"Pop502"="ACAD_OPD_SGPSRV2 pop502"
+"Pop503"="ACAD_OPD_SGPSRV2 pop503"
+"Pop2"="ACAD pop2"
+"Pop3"="ACAD pop3"
+"Pop4"="ACAD pop4"
+"Pop5"="ACAD pop5"
+"Pop6"="ACAD pop6"
+"Pop7"="ACAD pop7"
+"Pop8"="ACAD pop8"
+"Pop9"="ACAD pop9"
+"Pop10"="ACAD pop10"
+"Pop11"="EXPRESS pop1"
+"Pop12"="МАКРОСЫ pop1"
+"Pop13"="ACAD pop11"
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\MLeader]
+""=""
+"CreatedMode"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Previous plot settings]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Previous plot settings\Layout]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Previous plot settings\Model]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Project Settings]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\StatusBar]
+"DocumentStatusBar"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\StatusBar\Application]
+"CursorCoordinatesPane"=dword:00000001
+"SnapPane"=dword:00000001
+"GridPane"=dword:00000001
+"OrthoPane"=dword:00000001
+"PolarPane"=dword:00000001
+"OSnapPane"=dword:00000001
+"OTrackPane"=dword:00000001
+"DynamicUCSPane"=dword:00000001
+"DynInputPane"=dword:00000001
+"LineweightPane"=dword:00000001
+"Paper/ModelPane"=dword:00000000
+"TabletPane"=dword:00000001
+"FloatPane"=dword:00000001
+"SpacerPane"=dword:00000001
+"VpMaxPrevPane"=dword:00000001
+"VpMaxPane"=dword:00000001
+"VpMaxNextPane"=dword:00000001
+"ModelIconPane"=dword:00000001
+"LayoutIconPane"=dword:00000001
+"LayoutMoreIconPane"=dword:00000001
+"CleanScreenPane"=dword:00000001
+"AnnotationScales"=dword:00000001
+"ViewportScales"=dword:00000001
+"ViewportLockState"=dword:00000001
+"AnnotationVisibility"=dword:00000001
+"AutoScale"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Toolbars]
+"ACAD.TB_DIMENSION"="hide float 100 130 1"
+"ACAD.TB_DRAW"="show left 0 0"
+"ACAD.TB_DRAWORDER"="show top 2 0"
+"ACAD.TB_INQUIRY"="hide float 100 170 1"
+"ACAD.TB_INSERT"="hide float 100 190 1"
+"ACAD.TB_LAYOUTS"="hide float 100 350 1"
+"ACAD.TB_MODIFY"="show right 0 0"
+"ACAD.TB_MODIFY_II"="hide float 631 150 1"
+"ACAD.TB_OBJECT_PROPERTIES"="show top 1 1"
+"ACAD.TB_LAYER"="show top 0 1"
+"ACAD.TB_STYLES"="show top 1 0"
+"ACAD.TB_OBJECT_SNAP"="hide float 100 210 1"
+"ACAD.TB_3DNAV"="hide float 100 350 1"
+"ACAD.TB_REFEDIT"="hide float 100 170 1"
+"ACAD.TB_REFERENCE"="hide float 100 370 1"
+"ACAD.TB_RENDER"="hide float 100 230 1"
+"ACAD.TB_SOLIDS"="hide bottom 2 0"
+"ACAD.TB_SOLIDS2"="hide bottom 1 0"
+"ACAD.STANDARD_ANNOTATION"="show top 0 0"
+"ACAD.TB_STANDARD"="hide top 0 0"
+"ACAD.TB_STANDARDS"="hide float 100 380 1"
+"ACAD.TB_TEXT"="hide float 100 320 1"
+"ACAD.TB_UCS"="hide float 100 310 1"
+"ACAD.TB_UCSII"="hide float 100 300 1"
+"ACAD.TB_WORKSPACES"="hide float 99 168 1"
+"ACAD.TB_VIEWPOINT"="hide float 125 587 1"
+"ACAD.TB_VIEWPORTS"="show top 2 1"
+"ACAD.TB_WEB"="hide float 100 380 1"
+"ACAD.TB_ZOOM"="hide float 100 350 1"
+"ACAD.TB_LAYER2"="hide float 377 109 1"
+"ACAD.TB_LIGHTS"="hide float 200 200 1"
+"ACAD.TB_MATMAPPING"="hide float 200 200 1"
+"ACAD.TB_VISUALSTYLE"="hide bottom 0 0"
+"ACAD.TB_ORBIT"="hide float 200 200 1"
+"ACAD.TB_CAMERA_ADJUSTMENT"="hide float 200 200 1"
+"ACAD.TB_WALKANDFLY"="hide float 200 200 1"
+"ACAD.TB_MLEADER"="hide float 760 160 1"
+"LargeButtons"="no"
+"ToolTips"="yes"
+"ShowShortcuts"="yes"
+"МАКРОСЫ.Toolbar1"="hide float 200 200 1"
+"МАКРОСЫ.Панель1"="hide float 200 200 1"
+"МАКРОСЫ.ШИФРЫ"="hide float 200 200 1"
+"PLTOOLS.PLTOOLS"="hide right 0 0"
+"PLTOOLS.PLTOOLS-VX"="hide right 0 0"
+"PLTOOLS.PLTOOLS-SEG"="hide float 906 280 1"
+"PLTOOLS.PLTOOLS-PLDRAW"="hide float 904 341 1"
+"PLTOOLS.PLINEWID"="hide float 890 486 1"
+"PLTOOLS.PLINEWID_DIMSCALE"="hide float 898 412 1"
+"SPDS.TLBR1"="hide float 400 50 1"
+"SPDS.TLBR2"="hide float 400 50 1"
+"SPDS.TLBR3"="hide float 400 50 1"
+"SPDS.TLBR4"="hide float 400 50 1"
+"SPDS.TLBR5"="hide float 400 50 1"
+"SPDS.TLBR6"="hide float 400 50 1"
+"SPDS.TLBR7"="hide float 400 50 1"
+"SPDS.TLBR8"="hide float 400 50 1"
+"SPDS.TLBR9"="hide float 400 50 1"
+"SPDS.TLBR10"="hide float 400 50 1"
+"SPDS.TLBR11"="hide float 400 50 1"
+"SPDS.TLBR12"="hide float 400 50 1"
+"SPDS.TLBR13"="hide left 0 1"
+"SPDS.TLBR14"="hide float 400 50 1"
+"SPDS.TLBR15"="hide float 400 50 1"
+"SPDS.TLBR16"="show left 1 0"
+"SPDS.TLBR17"="hide float 400 50 1"
+"SPDS.TLBR18"="hide top 0 0"
+"SPDS.TLBR19"="hide float 400 50 1"
+"SPDS.TLBR20"="hide float 400 50 1"
+"SPDS.TLBR21"="hide float 400 50 1"
+"ACADNETASSEMBLIES.ASSEMBLIES"="hide float 200 200 1"
+"SPDS.Пользовательская панель"="hide float 200 200 1"
+"ACAD.Панель1"="hide float 1645 612 1"
+"МАКРОСЫ.Панель2"="show left 0 4"
+"EXPRESS.TB_EXPRESS_TOOLS_TEXT_TOOLBAR"="hide float 310 145 1"
+"EXPRESS.TB_EXPRESS_TOOLS_BLOCK_TOOLBAR"="hide float 310 205 1"
+"EXPRESS.TB_EXPRESS_TOOLS_STANDARD_TOOLBAR"="hide float 310 265 1"
+"ACAD_OPD_SGPSRV2.TB_DIMENSION"="hide float 100 130 1"
+"ACAD_OPD_SGPSRV2.TB_DRAW"="hide left 0 0"
+"ACAD_OPD_SGPSRV2.TB_DRAWORDER"="hide right 0 1"
+"ACAD_OPD_SGPSRV2.TB_INQUIRY"="hide float 100 170 1"
+"ACAD_OPD_SGPSRV2.TB_INSERT"="hide float 100 190 1"
+"ACAD_OPD_SGPSRV2.TB_LAYOUTS"="hide float 100 350 1"
+"ACAD_OPD_SGPSRV2.TB_MODIFY"="hide right 0 0"
+"ACAD_OPD_SGPSRV2.TB_MODIFY_II"="hide float 100 270 1"
+"ACAD_OPD_SGPSRV2.TB_OBJECT_PROPERTIES"="hide top 2 1"
+"ACAD_OPD_SGPSRV2.TB_LAYER"="hide top 1 1"
+"ACAD_OPD_SGPSRV2.TB_STYLES"="hide top 1 0"
+"ACAD_OPD_SGPSRV2.TB_OBJECT_SNAP"="hide float 100 210 1"
+"ACAD_OPD_SGPSRV2.TB_3DNAV"="hide float 100 350 1"
+"ACAD_OPD_SGPSRV2.TB_REFEDIT"="hide float 100 170 1"
+"ACAD_OPD_SGPSRV2.TB_REFERENCE"="hide float 100 370 1"
+"ACAD_OPD_SGPSRV2.TB_RENDER"="hide float 100 230 1"
+"ACAD_OPD_SGPSRV2.TB_SOLIDS"="hide float 100 250 1"
+"ACAD_OPD_SGPSRV2.TB_SOLIDS2"="hide float 100 250 1"
+"ACAD_OPD_SGPSRV2.STANDARD_ANNOTATION"="hide top 0 0"
+"ACAD_OPD_SGPSRV2.TB_STANDARD"="hide top 0 0"
+"ACAD_OPD_SGPSRV2.TB_STANDARDS"="hide float 100 380 1"
+"ACAD_OPD_SGPSRV2.TB_TEXT"="hide float 100 320 1"
+"ACAD_OPD_SGPSRV2.TB_UCS"="hide float 100 310 1"
+"ACAD_OPD_SGPSRV2.TB_UCSII"="hide float 100 300 1"
+"ACAD_OPD_SGPSRV2.TB_WORKSPACES"="hide top 0 0"
+"ACAD_OPD_SGPSRV2.TB_VIEWPOINT"="hide float 100 330 1"
+"ACAD_OPD_SGPSRV2.TB_VIEWPORTS"="hide float 100 350 1"
+"ACAD_OPD_SGPSRV2.TB_WEB"="hide float 100 380 1"
+"ACAD_OPD_SGPSRV2.TB_ZOOM"="hide float 100 350 1"
+"ACAD_OPD_SGPSRV2.TB_LAYER2"="hide float 310 325 1"
+"ACAD_OPD_SGPSRV2.TB_LIGHTS"="hide float 200 200 1"
+"ACAD_OPD_SGPSRV2.TB_MATMAPPING"="hide float 200 200 1"
+"ACAD_OPD_SGPSRV2.TB_VISUALSTYLE"="hide float 200 200 1"
+"ACAD_OPD_SGPSRV2.TB_ORBIT"="hide float 200 200 1"
+"ACAD_OPD_SGPSRV2.TB_CAMERA_ADJUSTMENT"="hide float 200 200 1"
+"ACAD_OPD_SGPSRV2.TB_WALKANDFLY"="hide float 200 200 1"
+"ACAD_OPD_SGPSRV2.TB_MLEADER"="hide float 200 200 1"
+"ACAD.Пользовательская панель"="hide float 200 200 1"
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Tooltip]
+"Model color"=dword:00DCC7C7
+"Layout color"=dword:00571416
+"Parallel color"=dword:00571416
+"Perspective color"=dword:00571416
+"BEdit color"=dword:00571416
+"Model bk color"=dword:00571416
+"Layout bk color"=dword:00DCC7C7
+"Parallel bk color"=dword:00DCC7C7
+"Perspective bk color"=dword:00DCC7C7
+"BEdit bk color"=dword:00DCC7C7
+"Model bk use tint"=dword:00000000
+"Layout bk use tint"=dword:00000000
+"Parallel bk use tint"=dword:00000001
+"Perspective bk use tint"=dword:00000001
+"BEdit bk use tint"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Vault]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\Profiles\OPD_NET\Vault\ESW]
+"LVColumnWidths"="25 18 95 132 59 114 108 111 80 166 "
+"LowerGroupRatio"="68"
+"LowerGroupMinimized"="false"
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile]
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile\Application Window]
+"Show"=dword:00000003
+"Position"="-1 1 538 959"
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile\Command Line Windows]
+"TextWindow.Show"=dword:00000001
+"TextWindow.Position"="207 244 989 735"
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile\Drawing Window]
+"Show"=dword:00000003
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile\Editor Configuration]
+"SDF_AttributeExtractTemplateFile"=""
+"AutoSnapColor"=dword:00000007
+"AutoSnapPolarDistance"="0"
+"AutoSnapPolarAng"="0.26179938779914941"
+"AutoSnapPolarMode"=dword:00000006
+"AutoSnapPolarAddAng"="0.78539816339744828;2.3561944901923448;3.9269908169872414;5.497787143782138"
+"Model AutoSnap Color"=dword:007FBFFF
+"Layout AutoSnap Color"=dword:004687C8
+"Parallel AutoSnap Color"=dword:004687C8
+"Perspective AutoSnap Color"=dword:004687C8
+"BEdit AutoSnap Color"=dword:004687C8
+"GripSize"=dword:00000004
+"PickBox"=dword:00000005
+"MaxOctTreeNodesToAllocate"=dword:0006DDD0
+"UCSDetect"=dword:00000000
+"SigWarn"=dword:00000000
+"GripColor"=dword:0000001E
+"AutoSnapControl"=dword:00000027
+"GripObjLimit"=dword:000003E8
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile\General]
+"StartUpType"="Template"
+"ANSIHatch"="acad.pat"
+"ANSILinetype"="acad.lin"
+"ISOHatch"="acadiso.pat"
+"ISOLinetype"="acadiso.lin"
+"ImpressionInit"=dword:00000001
+"ProfileStorage"="%RoamableRootFolder%\\Support\\Profiles\\FixedProfile.aws"
+"Measureinit"=dword:00000000
+"InsertUnitsDefSource"=dword:00000004
+"InsertUnitsDefTarget"=dword:00000004
+"TaskBar"=dword:00000000
+"LastTemplate"="acadiso.dwt"
+"GeomPropsScale"="1.000000000000000"
+"acedChangeCmdEchoWithoutUndo"="0"
+"ACET-OVERKILL-IGNORE"="STR__"
+
+[HKEY_CURRENT_USER\Software\Autodesk\AutoCAD\R17.1\ACAD-6004:419\FixedProfile\General Configuration]
+"TOOLTIPMERGE"=dword:00000001
+"DYNPICOORDS"=dword:00000001
+"DYNDIVIS"=dword:00000002

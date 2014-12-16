@@ -1,0 +1,897 @@
+<?xml version="1.0"?>
+<!--
+Внимание! Не изменяйте содержимое этого файла.
+При попытке редактирования этого файла с помощью редактора XML возможна потеря адаптации и функций миграции.
+Если требуется изменить информацию в файле адаптации, используйте диалоговое окно "Настройка интерфейса пользователя" в продукте.
+Чтобы открыть диалоговое окно "Настройка интерфейса пользователя", щелкните меню "Сервис" > "Адаптация" > "Интерфейс" или введите НПИ в командной строке. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="4" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="PLTOOLS">
+    <MacroGroup Name="PLTOOLSMacros">
+      <MenuMacro UID="MIP_PLINE_11">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0002">Реверс объектов</Name>
+          <Command>^C^C^P(if (not c:ENTREVS)(load "pltools"));^PENTREVS; </Command>
+          <HelpString xlate="true" UID="XLS_0110">Реверс полилиний, отрезков, сплайнов. Поштучный - ENTREVS, Нескольких - ENTREV</HelpString>
+          <SmallImage Name="ENTREVS" />
+          <LargeImage Name="ENTREVS" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_5">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0006">Объединить выбранное в 2d полилинии</Name>
+          <Command>^C^C^P(if (not C:PL-JOIN)(load "pltools"));^PPL-JOIN; </Command>
+          <HelpString xlate="true" UID="XLS_0105">Объединение всего что выбнано в полилинии. PL-JOIN</HelpString>
+          <SmallImage Name="PL-JOIN" />
+          <LargeImage Name="PL-JOIN" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_22">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0008">Объединить выбранное в 3d полилинии</Name>
+          <Command>^C^C^P(if (not C:PL-JOIN3D)(load "pltools"));^PPL-JOIN3D; </Command>
+          <HelpString xlate="true" UID="XLS_0121">Объединение отрезков и 3d полилиний в 3d полилинии. PL-JOIN3D</HelpString>
+          <SmallImage Name="PL-JOIN3D" />
+          <LargeImage Name="PL-JOIN3D" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_24">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0010">Объединить примыкающие объекты в полилинию</Name>
+          <Command>^C^C^P(if (not C:PL-CSE)(load "pltools"));^PPL-CSE; </Command>
+          <HelpString xlate="true" UID="XLS_0123">Объединяет примыкающие отрезки, дуги, 2d полилинии в 2d полилинию. PL-CSE</HelpString>
+          <SmallImage Name="PL-CSE" />
+          <LargeImage Name="PL-CSE" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_10">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0012">Конвертировать линейные обекты в 2d</Name>
+          <Command>^C^C^P(if (not C:ConvTo2d)(load "pltools"));^PConvTo2d; </Command>
+          <HelpString xlate="true" UID="XLS_0109">Конвертировать линейные объекты в 2d. ConvTo2d.</HelpString>
+          <SmallImage Name="3d2d" />
+          <LargeImage Name="3d2d" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_25">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0014">Конвертировать линейные обекты в 3d</Name>
+          <Command>^C^C^P(if (not C:ConvTo3d)(load "pltools"));^PConvTo3d; </Command>
+          <HelpString xlate="true" UID="XLS_0124">Конвертировать линейные объекты в 3d. ConvTo3d.</HelpString>
+          <SmallImage Name="2d3d" />
+          <LargeImage Name="2d3d" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_6">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0016">Редактировать полилинию</Name>
+          <Command>^C^C_pedit  </Command>
+          <HelpString xlate="true" UID="XLS_0106">Стандартный _.PEDIT</HelpString>
+          <SmallImage Name="RCDATA_16_PEDIT" />
+          <LargeImage Name="RCDATA_16_PEDIT" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_12">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0018">Помощь pltools</Name>
+          <Command>^C^C(help "pltools.chm" "")  </Command>
+          <HelpString xlate="true" UID="XLS_0111">Удалить указанную вершину полилинии. PL-VxDel</HelpString>
+          <SmallImage Name="HELP" />
+          <LargeImage Name="HELP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0010">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0021">Добавить вершину в полилинию</Name>
+          <Command>^C^C^P(if (not c:PL-VxAdd)(load "pltools"));^PPL-VxAdd; </Command>
+          <HelpString xlate="true" UID="XLS_0100">Добавление вершины в полилинию. Подрезка видовах экранов PL-VxAdd</HelpString>
+          <SmallImage Name="PL-VxAdd" />
+          <LargeImage Name="PL-VxAdd" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0012">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0023">Удалить вершину полилинии</Name>
+          <Command>^C^C^P(if (not C:PL-VxDel)(load "pltools"));^PPL-VxDel; </Command>
+          <HelpString xlate="true" UID="XLS_0111">Удалить указанную вершину полилинии. PL-VxDel</HelpString>
+          <SmallImage Name="PL-VxDel" />
+          <LargeImage Name="PL-VxDel" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_20">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0025">Переместить вершину</Name>
+          <Command>^C^C^P(if (not C:PL-VxMove)(load "pltools"));^PPL-VxMove; </Command>
+          <HelpString xlate="true" UID="XLS_0119">Переместить вершину полилинии. PL-VxMove</HelpString>
+          <SmallImage Name="PL-VxMove" />
+          <LargeImage Name="PL-VxMove" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_21">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0027">Сделать вершину начальной</Name>
+          <Command>^C^C^P(if (not C:PL-Vx1)(load "pltools"));^PPL-Vx1; </Command>
+          <HelpString xlate="true" UID="XLS_0120">Сделать указанную вершину начальной. PL-Vx1</HelpString>
+          <SmallImage Name="PL-Vx1" />
+          <LargeImage Name="PL-Vx1" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_16">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0029">Прополка полилинии</Name>
+          <Command>^C^C^P(if (not C:PL-VxRdc)(load "pltools"));^PPL-VxRdc; </Command>
+          <HelpString xlate="true" UID="XLS_0115">Команда удаляет вершины полилиний, которые лежат на одной прямой. Возможно указание углового допуска или отклонения от прямой. PL-VxRdc</HelpString>
+          <SmallImage Name="PL-VxRdc" />
+          <LargeImage Name="PL-VxRdc" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_17">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0031">Удаление совпадающих вершин</Name>
+          <Command>^C^C^P(if (not C:PL-VxRdc)(load "pltools"));^PPL-VxOpt; </Command>
+          <HelpString xlate="true" UID="XLS_0116">Удаление совпадающих вершин. PL-VxOpt</HelpString>
+          <SmallImage Name="PL-VxOpt" />
+          <LargeImage Name="PL-VxOpt" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_13">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0034">Поделить сегмент полилинии</Name>
+          <Command>^C^C^P(if (not C:PL-DIV)(load "pltools"));^PPL-DIV; </Command>
+          <HelpString xlate="true" UID="XLS_0112">Поделить сегмент полилинии на указанное количество или через указанное расстояние. PL-DIV</HelpString>
+          <SmallImage Name="PL-DIV" />
+          <LargeImage Name="PL-DIV" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_14">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0036">Поделить все сегменты полилинии</Name>
+          <Command>^C^C^P(if (not C:PL-DIVALL)(load "pltools"));^PPL-DIVALL; </Command>
+          <HelpString xlate="true" UID="XLS_0113">Поделить сегменты всей полилинии на указанное количество или через указанное расстояние. PL-DIVALL</HelpString>
+          <SmallImage Name="PL-DIVALL" />
+          <LargeImage Name="PL-DIVALL" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_9">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0038">Аппроксимация дуговых сегментов линейным</Name>
+          <Command>^C^C^P(if (not C:PL-NoArc)(load "pltools"));^PPL-NoArc; </Command>
+          <HelpString xlate="true" UID="XLS_0108">Аппроксимация дуговых сегментов линейным. PL-NoArc</HelpString>
+          <SmallImage Name="PL-NoArc" />
+          <LargeImage Name="PL-NoArc" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_3">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0040">Заменить линейный сегмент дуговым</Name>
+          <Command>^C^C^P(if (not C:PL-L2A)(load "pltools"));^PPL-L2A; </Command>
+          <HelpString xlate="true" UID="XLS_0103">Замена линейного сегмента в полилинии дуговым сегментом. PL-L2A</HelpString>
+          <SmallImage Name="PL-L2A" />
+          <LargeImage Name="PL-L2A" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_4">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0042">Заменить дуговой сегмент линейным</Name>
+          <Command>^C^C^P(if (not C:PL-A2L)(load "pltools"));^PPL-A2L; </Command>
+          <HelpString xlate="true" UID="XLS_0104">Замена дугового сегмента в полилинии линейным сегментом. PL-A2L</HelpString>
+          <SmallImage Name="PL-A2L" />
+          <LargeImage Name="PL-A2L" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_15">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0044">Клонировать сегменты</Name>
+          <Command>^C^C^P(if (not C:PL-CLONE)(load "pltools"));^PPL-CLONE; </Command>
+          <HelpString xlate="true" UID="XLS_0114">Из указанных пользователем сегментов полилинии создавается новая полилиния. PL-CLONE</HelpString>
+          <SmallImage Name="PL-CLONE" />
+          <LargeImage Name="PL-CLONE" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_23">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0046">Изменить ширину сегмента</Name>
+          <Command>^C^C^P(if (not C:PL-SGWIDTH)(load "pltools"));^PPL-SGWIDTH; </Command>
+          <HelpString xlate="true" UID="XLS_0122">Изменяет выбранную ширину сегмента полилинии PL-SgWidth</HelpString>
+          <SmallImage Name="PL-SGWIDTH" />
+          <LargeImage Name="PL-SGWIDTH" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_18">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0048">Справка о сегменте</Name>
+          <Command>^C^C^P(if (not C:PL-SGINFO)(load "pltools"));^PPL-SGINFO; </Command>
+          <HelpString xlate="true" UID="XLS_0117">Справка об указанном сегменте полилинии.  PL-SGINFO</HelpString>
+          <SmallImage Name="PL-SGINFO" />
+          <LargeImage Name="PL-SGINFO" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_19">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0051">Прямоугольник по 3 точкам</Name>
+          <Command>^C^C^P(if (not C:R3P)(load "pltools"));^PR3P; </Command>
+          <HelpString xlate="true" UID="XLS_0118">Строит прямоугольник по 3 точкам. R3P</HelpString>
+          <SmallImage Name="R3P" />
+          <LargeImage Name="R3P" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MIP_PLINE_1">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0053">Средняя полилиния</Name>
+          <Command>^C^C^P(if (not C:MPL)(load "pltools"));^PMPL; </Command>
+          <HelpString xlate="true" UID="XLS_0101">Строит среднюю полилинию между двумя выбранными. MPL</HelpString>
+          <SmallImage Name="MPL" />
+          <LargeImage Name="MPL" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_0">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0056">Новая толщина 0</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.0 0.0,'PLINEWID 0)  </Command>
+          <SmallImage Name="t00" />
+          <LargeImage Name="t00" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_1">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0058">Новая толщина 0.1</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.1 0.1,'PLINEWID 0.1)  </Command>
+          <SmallImage Name="t01" />
+          <LargeImage Name="t01" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_2">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0060">Новая толщина 0.2</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.2 0.2,'PLINEWID 0.2)  </Command>
+          <SmallImage Name="t02" />
+          <LargeImage Name="t02" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_3">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0062">Новая толщина 0.3</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.3 0.3,'PLINEWID 0.3)  </Command>
+          <SmallImage Name="t03" />
+          <LargeImage Name="t03" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_4">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0064">Новая толщина 0.4</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.4 0.4,'PLINEWID 0.4)  </Command>
+          <SmallImage Name="t04" />
+          <LargeImage Name="t04" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_5">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0066">Новая толщина 0.5</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.5 0.5,'PLINEWID 0.5)  </Command>
+          <SmallImage Name="t05" />
+          <LargeImage Name="t05" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_6">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0068">Новая толщина 0.6</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.6 0.6,'PLINEWID 0.6)  </Command>
+          <SmallImage Name="t06" />
+          <LargeImage Name="t06" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_7">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0070">Новая толщина 0.7</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.7 0.7,'PLINEWID 0.7)  </Command>
+          <SmallImage Name="t07" />
+          <LargeImage Name="t07" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_8">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0072">Новая толщина 0.8</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.8 0.8,'PLINEWID 0.8)  </Command>
+          <SmallImage Name="t08" />
+          <LargeImage Name="t08" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_9">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0074">Новая толщина 0.9</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.9 0.9,'PLINEWID 0.9)  </Command>
+          <SmallImage Name="t09" />
+          <LargeImage Name="t09" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PLINEWID_10">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0076">Новая толщина 1.0</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 1.0 1.0,'PLINEWID 1.0)  </Command>
+          <SmallImage Name="t10" />
+          <LargeImage Name="t10" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0039">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0080">Новая толщина 0.1</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.1) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.1))  </Command>
+          <SmallImage Name="t01" />
+          <LargeImage Name="t01" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0041">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0082">Новая толщина 0.2</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.2) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.2))  </Command>
+          <SmallImage Name="t02" />
+          <LargeImage Name="t02" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0043">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0084">Новая толщина 0.3</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.3) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.3))  </Command>
+          <SmallImage Name="t03" />
+          <LargeImage Name="t03" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0045">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0086">Новая толщина 0.4</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.4) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.4))  </Command>
+          <SmallImage Name="t04" />
+          <LargeImage Name="t04" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0047">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0088">Новая толщина 0.5</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.5) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.5))  </Command>
+          <SmallImage Name="t05" />
+          <LargeImage Name="t05" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0049">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0090">Новая толщина 0.6</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.6) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.6))  </Command>
+          <SmallImage Name="t06" />
+          <LargeImage Name="t06" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0051">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0092">Новая толщина 0.7</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.7) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.7))  </Command>
+          <SmallImage Name="t07" />
+          <LargeImage Name="t07" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0053">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0094">Новая толщина 0.8</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.8) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.8))  </Command>
+          <SmallImage Name="t08" />
+          <LargeImage Name="t08" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0055">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0096">Новая толщина 0.9</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.9) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.9))  </Command>
+          <SmallImage Name="t09" />
+          <LargeImage Name="t09" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0057">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0098">Новая толщина 1.0</Name>
+          <Command>$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),1.0) ,'PLINEWID $(*,$(getvar,DIMSCALE),1.0))  </Command>
+          <SmallImage Name="t10" />
+          <LargeImage Name="t10" />
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot />
+      <DigitizerButtonRoot />
+      <PopMenuRoot />
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="901" yval="151" rows="1" UID="MIP_PLINE_0">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>PLTOOLS</Alias>
+          <Alias>TB_ОПЦИИ_ПОЛИЛИНИИ</Alias>
+          <Alias>Опции_полилинии</Alias>
+          <Description xlate="true" UID="XLS_0100">Добавление вершины в полилинию. Подрезка видовах экранов PL-VxAdd</Description>
+          <Name xlate="true" UID="XLS_0001">Опции полилинии</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0003">Реверс объектов</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_11" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarFlyout UseOwnIcon="false" pTargetAlias="PLTOOLS-VX" UID="ID_F_0">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <FlyoutName xlate="true" UID="XLS_0004">Пользовательское подменю</FlyoutName>
+            <SmallImage Name="RCDATA_16_BLANK" />
+            <LargeImage Name="RCDATA_16_BLANK" />
+          </ToolbarFlyout>
+          <ToolbarFlyout UseOwnIcon="false" pTargetAlias="PLTOOLS-SEG" UID="ID_F_1">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <FlyoutName xlate="true" UID="XLS_0005">Пользовательское подменю</FlyoutName>
+            <SmallImage Name="RCDATA_16_BLANK" />
+            <LargeImage Name="RCDATA_16_BLANK" />
+          </ToolbarFlyout>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0007">Объединить выбранное в 2d полилинии</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_5" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0009">Объединить выбранное в 3d полилинии</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_22" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0011">Объединить примыкающие объекты в полилинию</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_24" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0013">Конвертировать линейные обекты в 2d</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_10" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0015">Конвертировать линейные обекты в 3d</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_25" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0017">Редактировать полилинию</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_6" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0019">Помощь pltools</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_12" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0052">Прямоугольник по 3 точкам</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_19" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="908" yval="218" rows="1" UID="ID_pltools_Vx_0">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>PLTOOLS-VX</Alias>
+          <Alias>TB_ВЕРШИНЫ_ПОЛИЛИНИЙ</Alias>
+          <Alias>Вершины_полилиний</Alias>
+          <Name xlate="true" UID="XLS_0020">Вершины полилиний</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0022">Добавить вершину в полилинию</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0010" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0024">Удалить вершину полилинии</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0012" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0026">Переместить вершину</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_20" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0028">Сделать вершину начальной</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_21" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0030">Прополка полилинии</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_16" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0032">Удаление совпадающих вершин</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_17" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="906" yval="280" rows="1" UID="ID_pltools_Seg_0">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>PLTOOLS-SEG</Alias>
+          <Alias>TB_СЕГМЕНТЫ_ПОЛИЛИНИЙ</Alias>
+          <Alias>Сегменты_полилиний</Alias>
+          <Name xlate="true" UID="XLS_0033">Сегменты полилиний</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0035">Поделить сегмент полилинии</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_13" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0037">Поделить все сегменты полилинии</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_14" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0039">Аппроксимация дуговых сегментов линейным</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_9" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0041">Заменить линейный сегмент дуговым</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_3" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0043">Заменить дуговой сегмент линейным</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_4" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0045">Клонировать сегменты</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_15" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0047">Изменить ширину сегмента</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_23" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0049">Справка о сегменте</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_18" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="904" yval="341" rows="1" UID="ID_PLDRAW_0">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>PLTOOLS-PLDRAW</Alias>
+          <Alias>PL-BONUS</Alias>
+          <Name xlate="true" UID="XLS_0050">PL-Bonus</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0054">Средняя полилиния</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MIP_PLINE_1" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="890" yval="486" rows="1" UID="ID_PLINEWID">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>PLINEWID</Alias>
+          <Alias>TB_ТОЛЩИНЫ_ПОЛИЛИНИИ</Alias>
+          <Alias>Ширина_полилинии</Alias>
+          <Name xlate="true" UID="XLS_0055">Ширина полилинии</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0057">Новая толщина 0</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_0" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0059">Новая толщина 0.1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_1" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0061">Новая толщина 0.2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_2" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0063">Новая толщина 0.3</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_3" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0065">Новая толщина 0.4</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_4" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0067">Новая толщина 0.5</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_5" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0033">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0069">Новая толщина 0.6</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_6" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0034">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0071">Новая толщина 0.7</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_7" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0035">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0073">Новая толщина 0.8</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_8" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0036">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0075">Новая толщина 0.9</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_9" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0037">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0077">Новая толщина 1.0</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_10" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="898" yval="412" rows="1" UID="TBU_0007">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>PLINEWID_DIMSCALE</Alias>
+          <Alias>DIMSCALE</Alias>
+          <Alias>Ширина_полилинии*Dimscale</Alias>
+          <Name xlate="true" UID="XLS_0078">Ширина полилинии*Dimscale</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0038">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0079">Новая толщина 0</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PLINEWID_0" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0039">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0081">Новая толщина 0.1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0039" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0040">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0083">Новая толщина 0.2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0041" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0041">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0085">Новая толщина 0.3</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0043" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0042">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0087">Новая толщина 0.4</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0045" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0043">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0089">Новая толщина 0.5</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0047" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0044">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0091">Новая толщина 0.6</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0049" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0045">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0093">Новая толщина 0.7</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0051" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0046">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0095">Новая толщина 0.8</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0053" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0047">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0097">Новая толщина 0.9</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0055" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0048">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0099">Новая толщина 1.0</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0057" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot />
+      <DoubleClickRoot />
+      <ToolPanelRoot />
+      <PanelSetRoot>
+        <PanelSet UID="PSTU_0001" />
+      </PanelSetRoot>
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

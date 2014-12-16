@@ -1,0 +1,7 @@
+^C^C_explodeallproxy;_removeallproxy;_y;_-purge;_all;;_no;_audit;_y;
+
+Пояснения
+//_-scalelistedit;_r;_y;^C - Очищает список аннотативных масштабов.
+_-purge;_all; - Очищает чертеж от неиспользуемых объектов
+_explodeallproxy;_removeallproxy - разбивает и удаляет прокси-объекты
+_audit;_y - Проверка чертежа с исправленем ошибок.

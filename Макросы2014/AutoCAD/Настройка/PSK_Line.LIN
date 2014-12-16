@@ -1,0 +1,202 @@
+;;
+;;  Krieger line type
+;;
+
+;ШВЫ СВАРНЫХ СОЕДИНЕНИЙ
+
+*PSK_Weld_01,стыковой заводской сплошной видимый +++++++++
+A,1.499999,0.000001,[TRACK1,ltypeshp.shx,S=0.75],0
+
+*PSK_Weld_02,стыковой монтажный сплошной видимый -xxxxxxxxx-
+A,0.199999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0
+
+*PSK_Weld_02a,стыковой монтажный сплошной видимый -x-x-x-x-x-
+A,1.499999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0
+
+*PSK_Weld_03,стыковой заводской сплошной невидимый +++ +++ +++
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75],0.8,-1.4,0.8,[TRACK1,ltypeshp.shx,S=0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8],0
+
+*PSK_Weld_04,стыковой монтажный сплошной невидимый -xx- -xx- -xx-
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0.4,-1.4,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0
+
+*PSK_Weld_05,стыковой заводской прерывистый видимый +++--+++--+++
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75],3.4,[TRACK1,ltypeshp.shx,S=0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8],0
+
+*PSK_Weld_06,стыковой монтажный прерывистый видимый --xx---xx---xx-
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],2.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0
+
+*PSK_Weld_07,стыковой заводской прерывистый невидимый +++ - +++ - +++
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75],0.8,-1.4,3,-1.4,0.8,[TRACK1,ltypeshp.shx,S=0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8],0
+
+*PSK_Weld_08,стыковой монтажный прерывистый невидимый-xx- - -xx- - -xx-
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0.4,-1.4,3,-1.4,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],0
+
+*PSK_Weld_09,угловой заводской сплошной видимый _LLLLLLLLL
+A,1.499999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0
+
+*PSK_Weld_09R,угловой заводской сплошной видимый _LLLLLLLLL
+A,1.499999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0
+
+*PSK_Weld_10,угловой монтажный сплошной видимый _xxxxxxxxx_
+A,0.199999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0
+
+*PSK_Weld_10a,угловой монтажный сплошной видимый _x_x_x_x_x_
+A,1.499999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0
+
+*PSK_Weld_10R,угловой монтажный сплошной видимый _xxxxxxxxx_
+A,0.199999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0
+
+*PSK_Weld_10aR,угловой монтажный сплошной видимый _x_x_x_x_x_
+A,1.499999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0
+
+*PSK_Weld_11,угловой заводской сплошной невидимый _LLL  _LLL  _LLL
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0.8,-1.4,0.8,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8,y=0.75],0
+
+*PSK_Weld_11R,угловой заводской сплошной невидимый _LLL  _LLL  _LLL
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0.8,-1.4,0.8,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8,y=-0.75],0
+
+*PSK_Weld_12,угловой монтажный сплошной невидимый _xx_  _xx_  _xx_
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0.4,-1.4,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0
+
+*PSK_Weld_12R,угловой монтажный сплошной невидимый _xx_  _xx_  _xx_
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0.4,-1.4,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0
+
+*PSK_Weld_13,угловой заводской прерывистый видимый _LLL___LLL___LLL
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],3.4,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8,y=0.75],0
+
+*PSK_Weld_13R,угловой заводской прерывистый видимый _LLL___LLL___LLL
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],3.4,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8,y=-0.75],0
+
+*PSK_Weld_14,угловой монтажный прерывистый видимый _xxx___xxx___xxx_
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],2.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0
+
+*PSK_Weld_14R,угловой монтажный прерывистый видимый _xxx___xxx___xxx_
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],2.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0
+
+*PSK_Weld_15,угловой заводской прерывистый невидимый _LLL  __  _LLL
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0.8,-1.4,3,-1.4,0.8,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8,y=0.75],0
+
+*PSK_Weld_15R,угловой заводской прерывистый невидимый _LLL  __  _LLL
+A,1.599999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75,x=-0.8],0.8,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0.8,-1.4,3,-1.4,0.8,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0.8,[TRACK1,ltypeshp.shx,S=0.75,x=0.8,y=-0.75],0
+
+*PSK_Weld_16,угловой монтажный прерывистый невидимый _xx_  __  _xx_
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0.4,-1.4,3,-1.4,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0
+
+*PSK_Weld_16R,угловой монтажный прерывистый невидимый _xx_  __  _xx_
+A,0.399999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0.4,-1.4,3,-1.4,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0
+
+;;PSK_Weld_17 в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_17,стыковой монтажный сплошной видимый без свариваемой детали xxxxxxxxx
+A,0,-0.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],-0.2
+
+;;PSK_Weld_17a в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_17a,стыковой монтажный сплошной видимый без свариваемой детали xxxxxxxxx
+A,0,-0.75,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,R=45],-0.75
+
+;;PSK_Weld_18 в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_18,угловой монтажный сплошной видимый без свариваемой детали xxxxxxxxx
+A,0,-0.1,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],-0.1
+
+;;PSK_Weld_18a в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_18a,угловой монтажный сплошной видимый без свариваемой детали xxxxxxxxx
+A,0,-0.75,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],-0.75
+
+;;PSK_Weld_18R в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_18R,угловой монтажный сплошной видимый без свариваемой детали xxxxxxxxx
+A,0,-0.1,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],-0.1
+
+;;PSK_Weld_18aR в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_18aR,угловой монтажный сплошной видимый без свариваемой детали xxxxxxxxx
+A,0,-0.75,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],-0.75
+
+;;PSK_Weld_19 в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_19,угловой монтажный сплошной невидимый без свариваемой детали . xx  xx  xx .
+A,0,-0.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],-2.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],-0.2
+
+;;PSK_Weld_19R в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_19R,угловой монтажный сплошной невидимый без свариваемой детали . xx  xx  xx .
+A,0,-0.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],-2.2,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],-1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],-0.2
+
+*PSK_Weld_20,угловой монтажный прихватка видимый  _xxxxxxxxx_
+A,4.999999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0
+
+*PSK_Weld_20R,угловой монтажный прихватка видимый  _xxxxxxxxx_
+A,4.999999,0.000001,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0
+
+;;PSK_Weld_21 в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_21,угловой монтажный прихватка невидимый _xx_  _xx_  _xx_
+A,0,-2.5,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=0.75,R=45],0.4,-2.5
+
+;;PSK_Weld_21R в BricsCAD не тестировался, возможно не будет симметричным
+*PSK_Weld_21R,угловой монтажный прихватка невидимый _xx_  _xx_  _xx_
+A,0,-2.5,0.4,[TRACK1,ltypeshp.shx,S=1.06,x=0.75,y=-0.75,R=-45],1.5,[TRACK1,ltypeshp.shx,S=1.06,x=-0.75,y=-0.75,R=45],0.4,-2.5
+
+*PSK_Weld_22,угловой существующий прихватка видимый _L___LL___LL___L
+A,0.999999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],6.2,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0
+
+*PSK_Weld_22R,угловой существующий прихватка видимый _L___LL___LL___L
+A,0.999999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],6.2,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0
+
+*PSK_Weld_23,угловой существующий прихватка невидимый _L  _LL  _LL  _L
+A,0.999999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0.6,-5,0.6,[TRACK1,ltypeshp.shx,S=0.75,y=0.75],0
+
+*PSK_Weld_23R,угловой существующий прихватка невидимый _L  _LL  _LL  _L
+A,0.999999,0.000001,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0.6,-5,0.6,[TRACK1,ltypeshp.shx,S=0.75,y=-0.75],0
+
+*PSK_Weld_24,стыковой существующий прихватка видимый +-++-++-++-+
+A,0.999999,0.000001,[TRACK1,ltypeshp.shx,S=0.75],6.2,[TRACK1,ltypeshp.shx,S=0.75],0
+
+*PSK_Weld_25,стыковой существующий прихватка невидимый + ++ ++ ++ +
+A,0.999999,0.000001,[TRACK1,ltypeshp.shx,S=0.75],0.6,-5,0.6,[TRACK1,ltypeshp.shx,S=0.75],0
+
+;;
+;;	Другие
+;;    
+*Axis, Осевая _______._______._____
+A, 18, -1.5, 0.5, -1.5
+*gost5,Штриховая __ __ 
+A,5,-2,0
+*gost6,Поверхность ___ _ ___ _ ___ _ ___ _ ___ _ ___
+A,8,-1.5,1,-1.5
+*gost7,Штрихпунктирная  __..__..__..__..__..__..__..__.._
+A,20,-1.5,1,-1.5,1,-1.5
+*Ground1, Обозначение земли в разрезе /// /// /// /// /// ///
+A,12,[TRACK1,ltypeshp.shx,S=3,r=-150,y=-2.598],3,[TRACK1,ltypeshp.shx,S=3,r=-150,y=-2.598],3,[TRACK1,ltypeshp.shx,S=3,r=-150,y=-2.598],0
+*Ground2, Обозначение земли в разрезе \\\ \\\ \\\ \\\ \\\ \\\
+A,12,[TRACK1,ltypeshp.shx,S=3,r=-210,y=-2.598],3,[TRACK1,ltypeshp.shx,S=3,r=-210,y=-2.598],3,[TRACK1,ltypeshp.shx,S=3,r=-210,y=-2.598],0
+*GroundSmall1, Обозначение земли в разрезе /// /// /// /// /// ///
+A,6,[TRACK1,ltypeshp.shx,S=1.5,r=-150,y=-1.299],1.5,[TRACK1,ltypeshp.shx,S=1.5,r=-150,y=-1.299],1.5,[TRACK1,ltypeshp.shx,S=1.5,r=-150,y=-1.299],0
+*GroundSmall2, Обозначение земли в разрезе \\\ \\\ \\\ \\\ \\\ \\\
+A,6,[TRACK1,ltypeshp.shx,S=1.5,r=-210,y=-1.299],1.5,[TRACK1,ltypeshp.shx,S=1.5,r=-210,y=-1.299],1.5,[TRACK1,ltypeshp.shx,S=1.5,r=-210,y=-1.299],0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

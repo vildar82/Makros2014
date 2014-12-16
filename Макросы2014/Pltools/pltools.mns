@@ -1,0 +1,112 @@
+//
+//      файл меню AutoCAD - F:\BAT\plTools\pltools.mns
+//      next MIP_PLINE_26
+
+***MENUGROUP=PLTOOLS
+
+***TOOLBARS
+**PLTOOLS
+**TB_ОПЦИИ_ПОЛИЛИНИИ
+MIP_PLINE_0    [_Toolbar("Опции полилинии", _Floating, _Show, 901, 151, 1)]
+MIP_PLINE_11   [_Button("Реверс объектов", "ENTREVS", "ENTREVS")]^C^C^P(if (not c:ENTREVS)(load "pltools"));^PENTREVS;
+ID_F_0         [_Flyout("Пользовательское подменю", RCDATA_16_BLANK, RCDATA_16_BLANK, _OtherIcon, PLTOOLS.PLTOOLS-VX)]
+ID_F_1         [_Flyout("Пользовательское подменю", RCDATA_16_BLANK, RCDATA_16_BLANK, _OtherIcon, PLTOOLS.PLTOOLS-SEG)]
+MIP_PLINE_5    [_Button("Объединить выбранное в 2d полилинии", "PL-JOIN", "PL-JOIN")]^C^C^P(if (not C:PL-JOIN)(load "pltools"));^PPL-JOIN;
+MIP_PLINE_22   [_Button("Объединить выбранное в 3d полилинии", "PL-JOIN3D", "PL-JOIN3D")]^C^C^P(if (not C:PL-JOIN3D)(load "pltools"));^PPL-JOIN3D;
+MIP_PLINE_24   [_Button("Объединить примыкающие объекты в полилинию", "PL-CSE", "PL-CSE")]^C^C^P(if (not C:PL-CSE)(load "pltools"));^PPL-CSE;
+MIP_PLINE_10   [_Button("Конвертировать линейные обекты в 2d", "3d2d", "3d2d")]^C^C^P(if (not C:ConvTo2d)(load "pltools"));^PConvTo2d;
+MIP_PLINE_25  [_Button("Конвертировать линейные обекты в 3d", "2d3d", "2d3d")]^C^C^P(if (not C:ConvTo3d)(load "pltools"));^PConvTo3d;
+               [--]
+MIP_PLINE_6    [_Button("Редактировать полилинию", "RCDATA_16_PEDIT", "RCDATA_16_PEDIT")]^C^C_pedit 
+               [--]
+MIP_PLINE_12   [_Button("Помощь pltools", "HELP", "HELP")]^C^C(help "pltools.chm" "") 
+
+**PLTOOLS-VX
+**TB_ВЕРШИНЫ_ПОЛИЛИНИЙ
+ID_pltools_Vx_0 [_Toolbar("Вершины полилиний", _Floating, _Show, 908, 218, 1)]
+MIP_PLINE_0    [_Button("Добавить вершину в полилинию", "PL-VxAdd", "PL-VxAdd")]^C^C^P(if (not c:PL-VxAdd)(load "pltools"));^PPL-VxAdd;
+MIP_PLINE_12   [_Button("Удалить вершину полилинии", "PL-VxDel", "PL-VxDel")]^C^C^P(if (not C:PL-VxDel)(load "pltools"));^PPL-VxDel;
+MIP_PLINE_20   [_Button("Переместить вершину", "PL-VxMove", "PL-VxMove")]^C^C^P(if (not C:PL-VxMove)(load "pltools"));^PPL-VxMove;
+MIP_PLINE_21   [_Button("Сделать вершину начальной", "PL-Vx1", "PL-Vx1")]^C^C^P(if (not C:PL-Vx1)(load "pltools"));^PPL-Vx1;
+MIP_PLINE_16   [_Button("Прополка полилинии", "PL-VxRdc", "PL-VxRdc")]^C^C^P(if (not C:PL-VxRdc)(load "pltools"));^PPL-VxRdc;
+MIP_PLINE_17   [_Button("Удаление совпадающих вершин", "PL-VxOpt", "PL-VxOpt")]^C^C^P(if (not C:PL-VxRdc)(load "pltools"));^PPL-VxOpt;
+
+**PLTOOLS-SEG
+**TB_СЕГМЕНТЫ_ПОЛИЛИНИЙ
+ID_pltools_Seg_0 [_Toolbar("Сегменты полилиний", _Floating, _Show, 906, 280, 1)]
+MIP_PLINE_13   [_Button("Поделить сегмент полилинии", "PL-DIV", "PL-DIV")]^C^C^P(if (not C:PL-DIV)(load "pltools"));^PPL-DIV;
+MIP_PLINE_14   [_Button("Поделить все сегменты полилинии", "PL-DIVALL", "PL-DIVALL")]^C^C^P(if (not C:PL-DIVALL)(load "pltools"));^PPL-DIVALL;
+MIP_PLINE_9    [_Button("Аппроксимация дуговых сегментов линейным", "PL-NoArc", "PL-NoArc")]^C^C^P(if (not C:PL-NoArc)(load "pltools"));^PPL-NoArc;
+MIP_PLINE_3    [_Button("Заменить линейный сегмент дуговым", "PL-L2A", "PL-L2A")]^C^C^P(if (not C:PL-L2A)(load "pltools"));^PPL-L2A;
+MIP_PLINE_4    [_Button("Заменить дуговой сегмент линейным", "PL-A2L", "PL-A2L")]^C^C^P(if (not C:PL-A2L)(load "pltools"));^PPL-A2L;
+MIP_PLINE_15   [_Button("Клонировать сегменты", "PL-CLONE", "PL-CLONE")]^C^C^P(if (not C:PL-CLONE)(load "pltools"));^PPL-CLONE;
+MIP_PLINE_23   [_Button("Изменить ширину сегмента", "PL-SGWIDTH", "PL-SGWIDTH")]^C^C^P(if (not C:PL-SGWIDTH)(load "pltools"));^PPL-SGWIDTH;
+MIP_PLINE_18   [_Button("Справка о сегменте", "PL-SGINFO", "PL-SGINFO")]^C^C^P(if (not C:PL-SGINFO)(load "pltools"));^PPL-SGINFO;
+
+**PLTOOLS-PLDRAW
+**PL-BONUS
+ID_PLDRAW_0    [_Toolbar("PL-Bonus", _Floating, _Show, 904, 341, 1)]
+MIP_PLINE_19   [_Button("Прямоугольник по 3 точкам", "R3P", "R3P")]^C^C^P(if (not C:R3P)(load "pltools"));^PR3P;
+MIP_PLINE_1       [_Button("Средняя полилиния", "MPL", "MPL")]^C^C^P(if (not C:MPL)(load "pltools"));^PMPL;
+
+**PLINEWID
+**TB_ТОЛЩИНЫ_ПОЛИЛИНИИ
+ID_PLINEWID    [_Toolbar("Ширина полилинии", _Floating, _Show, 890, 486, 1)]
+ID_PLINEWID_0  [_Button("Новая толщина 0", "t00", "t00")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.0 0.0,'PLINEWID 0) 
+ID_PLINEWID_1  [_Button("Новая толщина 0.1", "t01", "t01")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.1 0.1,'PLINEWID 0.1) 
+ID_PLINEWID_2  [_Button("Новая толщина 0.2", "t02", "t02")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.2 0.2,'PLINEWID 0.2) 
+ID_PLINEWID_3  [_Button("Новая толщина 0.3", "t03", "t03")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.3 0.3,'PLINEWID 0.3) 
+ID_PLINEWID_4  [_Button("Новая толщина 0.4", "t04", "t04")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.4 0.4,'PLINEWID 0.4) 
+ID_PLINEWID_5  [_Button("Новая толщина 0.5", "t05", "t05")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.5 0.5,'PLINEWID 0.5) 
+ID_PLINEWID_6  [_Button("Новая толщина 0.6", "t06", "t06")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.6 0.6,'PLINEWID 0.6) 
+ID_PLINEWID_7  [_Button("Новая толщина 0.7", "t07", "t07")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.7 0.7,'PLINEWID 0.7) 
+ID_PLINEWID_8  [_Button("Новая толщина 0.8", "t08", "t08")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.8 0.8,'PLINEWID 0.8) 
+ID_PLINEWID_9  [_Button("Новая толщина 0.9", "t09", "t09")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.9 0.9,'PLINEWID 0.9) 
+ID_PLINEWID_10 [_Button("Новая толщина 1.0", "t10", "t10")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 1.0 1.0,'PLINEWID 1.0) 
+
+**PLINEWID_DIMSCALE
+**TB_ТОЛЩИНЫ_ПОЛИЛИНИИ*DIMSCALE
+ID_PLINEWID    [_Toolbar("Ширина полилинии*Dimscale", _Floating, _Show, 898, 412, 1)]
+ID_PLINEWID_0  [_Button("Новая толщина 0", "t00", "t00")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" 0.0 0.0,'PLINEWID 0) 
+ID_PLINEWID_1  [_Button("Новая толщина 0.1", "t01", "t01")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.1) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.1)) 
+ID_PLINEWID_2  [_Button("Новая толщина 0.2", "t02", "t02")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.2) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.2)) 
+ID_PLINEWID_3  [_Button("Новая толщина 0.3", "t03", "t03")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.3) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.3)) 
+ID_PLINEWID_4  [_Button("Новая толщина 0.4", "t04", "t04")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.4) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.4)) 
+ID_PLINEWID_5  [_Button("Новая толщина 0.5", "t05", "t05")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.5) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.5)) 
+ID_PLINEWID_6  [_Button("Новая толщина 0.6", "t06", "t06")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.6) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.6)) 
+ID_PLINEWID_7  [_Button("Новая толщина 0.7", "t07", "t07")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.7) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.7)) 
+ID_PLINEWID_8  [_Button("Новая толщина 0.8", "t08", "t08")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.8) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.8)) 
+ID_PLINEWID_9  [_Button("Новая толщина 0.9", "t09", "t09")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),0.9) ,'PLINEWID $(*,$(getvar,DIMSCALE),0.9)) 
+ID_PLINEWID_10 [_Button("Новая толщина 1.0", "t10", "t10")]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,5),PLINE),"_W" $(*,$(getvar,DIMSCALE),1.0) ,'PLINEWID $(*,$(getvar,DIMSCALE),1.0)) 
+
+
+***HELPSTRINGS
+MIP_PLINE_0    [Добавление вершины в полилинию. Подрезка видовах экранов PL-VxAdd]
+MIP_PLINE_1    [Строит среднюю полилинию между двумя выбранными. MPL]
+MIP_PLINE_2    [Удалить вершину полилинии. PL-VxDel]
+MIP_PLINE_3    [Замена линейного сегмента в полилинии дуговым сегментом. PL-L2A]
+MIP_PLINE_4    [Замена дугового сегмента в полилинии линейным сегментом. PL-A2L]
+MIP_PLINE_5    [Объединение всего что выбнано в полилинии. PL-JOIN]
+MIP_PLINE_6    [Стандартный _.PEDIT]
+MIP_PLINE_8    [Удаление совпадающих вершин. PL-VxOpt]
+MIP_PLINE_9    [Аппроксимация дуговых сегментов линейным. PL-NoArc]
+MIP_PLINE_10   [Конвертировать линейные объекты в 2d. ConvTo2d.]
+MIP_PLINE_11   [Реверс полилиний, отрезков, сплайнов. Поштучный - ENTREVS, Нескольких - ENTREV ]
+MIP_PLINE_12   [Удалить указанную вершину полилинии. PL-VxDel]
+MIP_PLINE_13   [Поделить сегмент полилинии на указанное количество или через указанное расстояние. PL-DIV]
+MIP_PLINE_14   [Поделить сегменты всей полилинии на указанное количество или через указанное расстояние. PL-DIVALL]
+MIP_PLINE_15   [Из указанных пользователем сегментов полилинии создавается новая полилиния. PL-CLONE]
+MIP_PLINE_16   [Команда удаляет вершины полилиний, которые лежат на одной прямой. Возможно указание углового допуска или отклонения от прямой. PL-VxRdc]
+MIP_PLINE_17   [Удаление совпадающих вершин. PL-VxOpt]
+MIP_PLINE_18   [Справка об указанном сегменте полилинии.  PL-SGINFO]
+MIP_PLINE_19   [Строит прямоугольник по 3 точкам. R3P]
+MIP_PLINE_20   [Переместить вершину полилинии. PL-VxMove]
+MIP_PLINE_21   [Сделать указанную вершину начальной. PL-Vx1]
+MIP_PLINE_22   [Объединение отрезков и 3d полилиний в 3d полилинии. PL-JOIN3D]
+MIP_PLINE_23   [Изменяет выбранную ширину сегмента полилинии PL-SgWidth]
+MIP_PLINE_24   [Объединяет примыкающие отрезки, дуги, 2d полилинии в 2d полилинию. PL-CSE]
+MIP_PLINE_25  [Конвертировать линейные объекты в 3d. ConvTo3d.]
+//
+//      Конец файла меню AutoCAD - F:\BAT\plTools\pltools.mns
+//
+

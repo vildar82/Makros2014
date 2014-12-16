@@ -1,0 +1,12 @@
+;;; файл сценария сборки Visual LISP [V1.0] SpdsNode saved to:[//Sgpsrv2/спд/Конструкторы/Макросы/BaseNodes] at:[11/28/08] 
+(PRV-DEF (:target . "SpdsNode.VLX")
+	 (:active-x . T)
+	 (:separate-namespace)
+	 (:protected . T)
+	 (:load-file-list (:lsp "SpdsNode.lsp"))
+	 (:require-file-list)
+	 (:ob-directory)
+	 (:tmp-directory)
+	 (:optimization . st)
+)
+;; EOF
